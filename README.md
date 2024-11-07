@@ -272,7 +272,7 @@ Use these as references to structure and build your own plugins, but note that a
 There're a lot of pieces of work involved in elevating the quality of the chatbot (e.g. plugin development, theme creation) and contributions are always welcome. If you're keen to help, whether it's **creating plugins, developing themes or just improving the core library**, please feel free to open a pull request or even [**reach out**](https://discord.gg/J6pA4v3AMW) directly to me. You may also take a look at some of the other relevant repositories below. Your help will be very much appreciated.
 
 ### Project Repository
-- https://github.com/tjtanjin/react-chatbotify-plugin-template
+- https://github.com/react-chatbotify-plugins/react-chatbotify-plugin-template
 
 ### Other Relevant Repositories
 - https://github.com/tjtanjin/react-chatbotify
