@@ -224,23 +224,29 @@ Below is an overview of the main folders and files in this template:
 |   ├── constants/
 │   │   └── DefaultPluginConfig.ts - Constants for plugin configurations.
 │   ├── core/
-│   │   └── RcbPlugin.tsx - Contains logic for hook factory and plugin hook.
+│   │   └── RcbPlugin.tsx - Contains core logic for the plugin (plugin hook).
+|   ├── factory/
+│   │   └── RcbPlugin.tsx - Contains hook factory that prepares and creates the plugin hook.
 |   ├── types/
 │   │   └── PluginConfig.ts - Contains type definition for plugin configurations.
 │   ├── App.tsx - For initializing and testing the plugin.
 │   ├── development.tsx - Entry point during development.
 │   └── index.tsx - Export file for your plugin.
+├── setup.js - Setup script for quick initialization of the project
 └── package.json - Update name and author fields here.
 ```
 
 ### Key Files
 - .github Folder: Contains templates and workflows for CI/CD, automating builds and releases.
-- Constants Folder: Contains constants used in the plugin (e.g. DefaultPluginConfig).
-- Factory Folder: Houses RcbPlugin.tsx, where the plugin logic is developed.
+- Constants Folder: Contains constants used in the plugin (e.g. _DefaultPluginConfig.ts_).
+- Core Folder: Houses the plugin hook, where the core logic for the plugin is developed.
+- Factory Folder: Houses the plugin factory, which prepares the plugin hook to be consumed by the core library.
 - Types Folder: Specifies the types used in the plugin (e.g. PluginConfig).
-- App File: Initializes the chatbot with your plugin; ideal for quick testing.
-- Development and Index Files: Used for development setup and exporting plugin components.
-- package.json: Update your plugin’s information here before publishing.
+- App.tsx File: Initializes the chatbot with your plugin; ideal for quick testing.
+- development.tsx File: Used for development setup and testing.
+- index.tsx File: Used to export plugin components.
+- setup.js: Setup script for quick initialization of the template repository.
+- package.json File: Update your plugin’s information here before publishing.
 
 ## Creating a Plugin
 
