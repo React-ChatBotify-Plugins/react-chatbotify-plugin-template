@@ -262,8 +262,8 @@ Here are some practical tips to improve your plugin development experience:
 ## Examples
 
 Here are some examples of official plugins developed using this template:
-- [**rcb-input-validator-plugin**](https://github.com/React-ChatBotify-Plugins/rcb-input-validator-plugin)
-- [**rcb-message-transformer-plugin**](https://github.com/React-ChatBotify-Plugins/rcb-message-transformer-plugin)
+- [**Input Validator**](https://github.com/React-ChatBotify-Plugins/input-validator)
+- [**Markdown Parser**](https://github.com/React-ChatBotify-Plugins/markdown-parser)
 
 Use these as references to structure and build your own plugins, but note that a template is ultimately a **recommended way of doing things**. There may be situations where deviations are justifiable, so feel free to **exercise your own discretion**.
 
