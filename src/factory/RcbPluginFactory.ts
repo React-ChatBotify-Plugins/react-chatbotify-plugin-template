@@ -6,11 +6,7 @@ import { PluginConfig } from "../types/PluginConfig";
  *
  * @param pluginConfig configurations for the plugin
  */
-const RcbPluginFactory = ({
-    pluginConfig,
-}: {
-    pluginConfig?: PluginConfig;
-} = {}) => {
+const RcbPluginFactory = (pluginConfig?: PluginConfig) => {
     // any custom logic to be ran before hook initialization can be done here
     
     // prepares and returns the plugin hook without calling it, because the

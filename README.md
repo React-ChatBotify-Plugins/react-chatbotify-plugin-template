@@ -224,9 +224,9 @@ Below is an overview of the main folders and files in this template:
 |   ├── constants/
 │   │   └── DefaultPluginConfig.ts - Constants for plugin configurations.
 │   ├── core/
-│   │   └── RcbPlugin.tsx - Contains core logic for the plugin (plugin hook).
+│   │   └── useRcbPlugin.ts - Contains core logic for the plugin (plugin hook).
 |   ├── factory/
-│   │   └── RcbPlugin.tsx - Contains hook factory that prepares and creates the plugin hook.
+│   │   └── RcbPluginFactory.ts - Contains hook factory that prepares and creates the plugin hook.
 |   ├── types/
 │   │   └── PluginConfig.ts - Contains type definition for plugin configurations.
 │   ├── App.tsx - For initializing and testing the plugin.
