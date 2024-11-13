@@ -14,24 +14,6 @@ const rl = readline.createInterface({
 	output: process.stdout,
 });
 
-// checks and warns if setup was already completed
-if (fs.existsSync(setupCompletedFlag)) {
-	console.log("\x1b[33m%s\x1b[0m", "Warning: Setup has already been completed once. Running it again may cause issues.");
-	
-	rl.question("Do you want to proceed with the setup? (yes/no): ", (answer) => {
-		if (answer.toLowerCase() !== "yes") {
-			console.log("Setup aborted.");
-			rl.close();
-			process.exit(0);
-		} else {
-			console.log("Proceeding with setup...\n");
-			startSetup();
-		}
-	});
-} else {
-	startSetup();
-}
-
 // prompts user for cleanup after setup
 const promptForCleanup = () => {
 	rl.question("\nWould you like to delete this setup script and the completion flag? (yes/no): ", (answer) => {
@@ -142,4 +124,22 @@ const startSetup = () => {
 	};
 
 	askQuestion(0);
+}
+
+// checks and warns if setup was already completed
+if (fs.existsSync(setupCompletedFlag)) {
+	console.log("\x1b[33m%s\x1b[0m", "Warning: Setup has already been completed once. Running it again may cause issues.");
+	
+	rl.question("Do you want to proceed with the setup? (yes/no): ", (answer) => {
+		if (answer.toLowerCase() !== "yes") {
+			console.log("Setup aborted.");
+			rl.close();
+			process.exit(0);
+		} else {
+			console.log("Proceeding with setup...\n");
+			startSetup();
+		}
+	});
+} else {
+	startSetup();
 }
