@@ -1,3 +1,3 @@
-import RcbPlugin from "./core/RcbPlugin";
+import RcbPlugin from "./factory/RcbPluginFactory";
 
 export default RcbPlugin;
