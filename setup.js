@@ -38,7 +38,7 @@ const startSetup = () => {
 	console.log("\x1b[36m%s\x1b[0m", "========================================");
 	console.log("\x1b[36m%s\x1b[0m", " React ChatBotify Plugin Template Setup");
 	console.log("\x1b[36m%s\x1b[0m", "========================================\n");
-	console.log("This setup will configure your plugin\"s name, description, export name and carry out initial installations.\n");
+	console.log("This setup will configure your plugin\"s name, description, export name, author and carry out initial installations.\n");
 
 	// questions to prompt during setup
 	const questions = [
@@ -49,6 +49,7 @@ const startSetup = () => {
 		},
 		{ question: "\x1b[33m[Prompt] Plugin description: \x1b[0m", key: "description" },
 		{ question: "\x1b[33m[Prompt] Export name (default export of your plugin): \x1b[0m", key: "exportName" },
+		{ question: "\x1b[33m[Prompt] GitHub handle (for author field in package.json): \x1b[0m", key: "author" },
 	];
 
 	let answers = {};
@@ -78,6 +79,7 @@ const startSetup = () => {
 		const packageData = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
 		packageData.name = answers.name;
 		packageData.description = answers.description;
+		packageData.author = answers.author;
 		fs.writeFileSync(packageJsonPath, JSON.stringify(packageData, null, 2));
 
 		// updates index.tsx
