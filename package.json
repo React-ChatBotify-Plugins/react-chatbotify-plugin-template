@@ -1,6 +1,5 @@
 {
   "name": "rcb-plugin",
-  "private": true,
   "files": [
     "./dist"
   ],
@@ -16,6 +15,9 @@
       "require": "./dist/index.cjs",
       "types": "./dist/index.d.ts"
     }
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
     "start": "vite serve",
