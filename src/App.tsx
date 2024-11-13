@@ -1,6 +1,6 @@
 import ChatBot, { Flow } from "react-chatbotify";
 
-import RcbPlugin from "./core/RcbPlugin";
+import RcbPlugin from "./factory/RcbPluginFactory";
 
 const App = () => {
 	// initialize example plugin
